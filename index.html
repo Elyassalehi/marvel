@@ -14,7 +14,18 @@
         mf.src = "//cdn.mouseflow.com/projects/ad06877f-20f6-40d5-acfb-d57c08364768.js";
         document.getElementsByTagName("head")[0].appendChild(mf);
       })();
+
+      // Track when the first iframe loads
+      function trackFirstIframe() {
+        window._mfq.push(["setVariable", "Iframe", "First Prototype"]);
+      }
+
+      // Track when the second iframe loads
+      function trackSecondIframe() {
+        window._mfq.push(["setVariable", "Iframe", "Second Prototype"]);
+      }
     </script>
+
 </head>
 <body>
     <h1>Marvel Prototypes</h1>
@@ -25,7 +36,8 @@
             height="1024" 
             allowTransparency="true" 
             frameborder="0" 
-            style="-webkit-clip-path: inset(2px 2px); clip-path: inset(2px 2px);">
+            style="-webkit-clip-path: inset(2px 2px); clip-path: inset(2px 2px);"
+            onload="trackFirstIframe()">
     </iframe>
 
     <br><br> <!-- Space between the two prototypes -->
@@ -36,7 +48,8 @@
             height="1024" 
             allowTransparency="true" 
             frameborder="0" 
-            style="-webkit-clip-path: inset(2px 2px); clip-path: inset(2px 2px);">
+            style="-webkit-clip-path: inset(2px 2px); clip-path: inset(2px 2px);"
+            onload="trackSecondIframe()">
     </iframe>
 
 </body>
