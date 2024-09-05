@@ -3,27 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marvel Prototypes with Mouseflow</title>
+    <title>Marvel Prototypes with Hotjar</title>
 
-    <!-- Mouseflow Tracking Code -->
-    <script type="text/javascript">
-      window._mfq = window._mfq || [];
-      (function() {
-        var mf = document.createElement("script");
-        mf.type = "text/javascript"; mf.defer = true;
-        mf.src = "//cdn.mouseflow.com/projects/ad06877f-20f6-40d5-acfb-d57c08364768.js";
-        document.getElementsByTagName("head")[0].appendChild(mf);
-      })();
-
-      // Track when the first iframe loads
-      function trackFirstIframe() {
-        window._mfq.push(["setVariable", "Iframe", "First Prototype"]);
-      }
-
-      // Track when the second iframe loads
-      function trackSecondIframe() {
-        window._mfq.push(["setVariable", "Iframe", "Second Prototype"]);
-      }
+    <!-- Hotjar Tracking Code for Elyas Salehi Shahraki Template Free -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:5111199,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
 
 </head>
@@ -36,8 +27,7 @@
             height="1024" 
             allowTransparency="true" 
             frameborder="0" 
-            style="-webkit-clip-path: inset(2px 2px); clip-path: inset(2px 2px);"
-            onload="trackFirstIframe()">
+            style="-webkit-clip-path: inset(2px 2px); clip-path: inset(2px 2px);">
     </iframe>
 
     <br><br> <!-- Space between the two prototypes -->
@@ -48,8 +38,7 @@
             height="1024" 
             allowTransparency="true" 
             frameborder="0" 
-            style="-webkit-clip-path: inset(2px 2px); clip-path: inset(2px 2px);"
-            onload="trackSecondIframe()">
+            style="-webkit-clip-path: inset(2px 2px); clip-path: inset(2px 2px);">
     </iframe>
 
 </body>
