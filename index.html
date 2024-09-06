@@ -17,28 +17,36 @@
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
 
+    <script>
+      // Function to track iframe interactions
+      function trackIframeInteraction(iframeId) {
+        hj('event', iframeId + '-click');
+      }
+    </script>
 </head>
 <body>
     <h1>Marvel Prototypes</h1>
 
-    <!-- First Marvel Prototype -->
+    <!-- First Marvel Prototype with click event tracking -->
     <iframe src="https://marvelapp.com/prototype/fd9ej6d?emb=1&iosapp=false&frameless=false"
             width="1440" 
             height="1024" 
             allowTransparency="true" 
             frameborder="0" 
-            style="-webkit-clip-path: inset(2px 2px); clip-path: inset(2px 2px);">
+            style="-webkit-clip-path: inset(2px 2px); clip-path: inset(2px 2px);"
+            onclick="trackIframeInteraction('first-prototype')">
     </iframe>
 
     <br><br> <!-- Space between the two prototypes -->
 
-    <!-- Second Marvel Prototype -->
+    <!-- Second Marvel Prototype with click event tracking -->
     <iframe src="https://marvelapp.com/prototype/anotherPrototype?emb=1&iosapp=false&frameless=false"
             width="1440" 
             height="1024" 
             allowTransparency="true" 
             frameborder="0" 
-            style="-webkit-clip-path: inset(2px 2px); clip-path: inset(2px 2px);">
+            style="-webkit-clip-path: inset(2px 2px); clip-path: inset(2px 2px);"
+            onclick="trackIframeInteraction('second-prototype')">
     </iframe>
 
 </body>
